@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Python, SQL and web freelancer</title>
+  <meta name="description" content="Freelance developer in Scotland. I automate repetitive work with Python, report on data with SQL and build simple, fast websites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Dani Aslan</a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1>I turn messy work into tidy workflows.</h1>
+        <p class="lead">Freelance developer in United Kingdom. I automate repetitive tasks with Python, answer business questions with SQL and build fast, simple websites. I'm also training as a machine learning engineer.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Tell me about your task</a>
+          <a class="btn btn-ghost" href="#projects">See my projects</a>
+        </div>
+        <p class="note">Replies within one working day.</p>
+      </div>
+
+      <div class="demo" aria-labelledby="demo-title">
+        <div class="demo-head">
+          <h2 id="demo-title">Try it: a messy folder</h2>
+          <button id="tidy-btn" class="btn btn-primary btn-small" type="button" aria-pressed="false">Tidy up</button>
+        </div>
+        <div id="pile" class="pile" aria-hidden="true"></div>
+        <div id="bins" class="bins"></div>
+        <p id="demo-status" class="demo-status" role="status">8 files, no order.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>What I can do for you</h2>
+      <dl class="services">
+        <div>
+          <dt>Automation with Python</dt>
+          <dd>Scripts that rename files, merge spreadsheets, collect data from public pages or send routine reports, so nobody repeats the same task by hand.</dd>
+        </div>
+        <div>
+          <dt>Data and reports with SQL</dt>
+          <dd>Clean queries that turn a database into answers: sales by month, best customers, who has gone quiet.</dd>
+        </div>
+        <div>
+          <dt>Websites and landing pages</dt>
+          <dd>Responsive pages in HTML, CSS and JavaScript that load fast and work on a phone.</dd>
+        </div>
+        <div>
+          <dt>Machine learning basics</dt>
+          <dd>Data preparation and small prediction models for projects that are ready to start simple.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Recent projects</h2>
+      <ul class="projects">
+        <li>
+          <h3>File Organizer</h3>
+          <p>A command-line tool that sorts a cluttered folder by file type. Includes a dry-run mode and never overwrites files.</p>
+          <p class="tech">Python, argparse, unittest</p>
+          <a href="https://github.com/archiscode/file-organizer">View on GitHub</a>
+        </li>
+        <li>
+          <h3>SQL Sales Analysis</h3>
+          <p>Seven queries that answer real shop questions: revenue trends, top products and customers at risk of leaving.</p>
+          <p class="tech">SQL, SQLite, Python</p>
+          <a href="https://github.com/archiscode/sql-sales-analysis">View on GitHub</a>
+        </li>
+        <li>
+          <h3>This page</h3>
+          <p>A responsive landing page with a working interactive demo, form validation and automatic dark mode.</p>
+          <p class="tech">HTML, CSS, JavaScript</p>
+          <a href="https://github.com/archiscode/landing-page">View on GitHub</a>
+        </li>
+        <li>
+          <h3>Breast Cancer Classifier</h3>
+          <p>A machine learning model that classifies tumours from medical measurements, with a comparison of two algorithms.</p>
+          <p class="tech">Python, scikit-learn, pandas</p>
+          <a href="https://github.com/archiscode/ml-mini-project">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <h2>Tell me about your task</h2>
+        <p>Describe what you need in a few sentences. I'll reply with a plan, a timeline and a price.</p>
+      </div>
+      <form id="contact-form" novalidate>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <p class="error" id="name-error" hidden></p>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <p class="error" id="email-error" hidden></p>
+
+        <label for="message">What do you need?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <p class="error" id="message-error" hidden></p>
+
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Dani Aslan. Based in Scotland, working with clients worldwide.</p>
+    <p><a href="https://github.com/archiscode">GitHub</a> &middot; <a href="https://www.linkedin.com/in/danylo-aslanian-82aa2b378">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
