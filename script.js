@@ -65,7 +65,7 @@ tidyBtn.addEventListener("click", () => {
 });
 
 /* ---------- Contact form: validation, then opens the visitor's email app ---------- */
-const CONTACT_EMAIL = "your.email@example.com"; // TODO: replace with your real address
+const CONTACT_EMAIL = "danylo.aslanian@gmail.com";
 
 const form = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
